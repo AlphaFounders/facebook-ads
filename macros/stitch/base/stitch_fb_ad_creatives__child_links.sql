@@ -14,7 +14,7 @@
 
 with base as (
 
-    select * from {{ var('ad_creatives__child_links_table', packages=facebook_ads._get_facebook_ads_namespaces())() }}
+    select * from {{ var('ad_creatives__child_links_table') }}
 
 ),
 
